@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio fx-991ES PLUS</title>
+    <!-- QR Code generated via API in script.js -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header">
+                <div class="brand">Saqib AbdulRaouf</div>
+                <div class="model">Minimal Calculator App</div>
+            </div>
+
+            <div class="display">
+                <div class="display-top" id="expression"></div>
+                <div class="display-main" id="result">0</div>
+            </div>
+
+            <div class="keys-upper">
+                <!-- Row 1: Control (6 cols: 1,1,2,1,1) -->
+                <button class="btn-small" onclick="shift()">SHIFT</button>
+                <button class="btn-small" onclick="alpha()">ALPHA</button>
+                <div class="replay-pad-container span-2">
+                    <button class="btn-replay replay-pad">
+                        <span class="arrow-up" onclick="cursorUp(event)">▲</span>
+                        <span class="arrow-left" onclick="cursorLeft(event)">◄</span>
+                        <span class="replay-text">REPLAY</span>
+                        <span class="arrow-right" onclick="cursorRight(event)">►</span>
+                        <span class="arrow-down" onclick="cursorDown(event)">▼</span>
+                    </button>
+                </div>
+                <button class="btn-small" onclick="mode()">MODE</button>
+                <button class="btn-small" onclick="toggleOnOff()">ON</button>
+
+                <!-- Row 2: Scientific 1 (6 cols) -->
+                <button class="btn-black" onclick="insertFunc('^(-1)')">x⁻¹</button>
+                <button class="btn-black" onclick="insertFunc('nCr')">nCr</button>
+                <button class="btn-black" onclick="insertFunc('Pol(')">Pol(</button>
+                <button class="btn-black" onclick="insertFunc('^3')">x³</button>
+                <button class="btn-black" onclick="insertOp('/')">ab/c</button>
+                <button class="btn-black" onclick="insertFunc('Rec(')">Rec(</button>
+
+                <!-- Row 3: Scientific 2 -->
+                <button class="btn-black" onclick="insertFunc('sqrt(')">√</button>
+                <button class="btn-black" onclick="insertFunc('^2')">x²</button>
+                <button class="btn-black" onclick="insertFunc('^')">^</button>
+                <button class="btn-black" onclick="insertFunc('log(')">log</button>
+                <button class="btn-black" onclick="insertFunc('ln(')">ln</button>
+                <button class="btn-black" onclick="insertFunc('(-)')">(-)</button>
+
+                <!-- Row 4: Scientific 3 -->
+                <button class="btn-black" onclick="insertFunc('°')">°'"</button>
+                <button class="btn-black" onclick="insertFunc('hyp')">hyp</button>
+                <button class="btn-black" onclick="insertFunc('sin(')">sin</button>
+                <button class="btn-black" onclick="insertFunc('cos(')">cos</button>
+                <button class="btn-black" onclick="insertFunc('tan(')">tan</button>
+                <button class="btn-black" onclick="insertFunc(',')">,</button>
+
+                <!-- Row 5: Scientific 4 -->
+                <button class="btn-black" onclick="insertFunc('rcl')">RCL</button>
+                <button class="btn-black" onclick="insertFunc('eng')">ENG</button>
+                <button class="btn-black" onclick="insertOp('(')">(</button>
+                <button class="btn-black" onclick="insertOp(')')">)</button>
+                <button class="btn-black" onclick="insertFunc('STO')">STO</button>
+                <button class="btn-black" onclick="insertFunc('M+')">M+</button>
+            </div>
+
+            <div class="keys-lower">
+                <!-- Row 6: Numpad Top (5 cols) -->
+                <button class="btn-gray" onclick="insertNum('7')">7</button>
+                <button class="btn-gray" onclick="insertNum('8')">8</button>
+                <button class="btn-gray" onclick="insertNum('9')">9</button>
+                <button class="btn-orange" onclick="deleteLast()">DEL</button>
+                <button class="btn-orange" onclick="clearAll()">AC</button>
+
+                <!-- Row 7: Numpad Mid -->
+                <button class="btn-gray" onclick="insertNum('4')">4</button>
+                <button class="btn-gray" onclick="insertNum('5')">5</button>
+                <button class="btn-gray" onclick="insertNum('6')">6</button>
+                <button class="btn-gray" onclick="insertOp('*')">×</button>
+                <button class="btn-gray" onclick="insertOp('/')">÷</button>
+
+                <!-- Row 8: Numpad Low -->
+                <button class="btn-gray" onclick="insertNum('1')">1</button>
+                <button class="btn-gray" onclick="insertNum('2')">2</button>
+                <button class="btn-gray" onclick="insertNum('3')">3</button>
+                <button class="btn-gray" onclick="insertOp('+')">+</button>
+                <button class="btn-gray" onclick="insertOp('-')">−</button>
+
+                <!-- Row 9: Bottom -->
+                <button class="btn-gray" onclick="insertNum('0')">0</button>
+                <button class="btn-gray" onclick="insertOp('.')">.</button>
+                <button class="btn-gray" onclick="insertFunc('EXP')">EXP</button>
+                <button class="btn-gray" onclick="insertFunc('Ans')">Ans</button>
+                <button class="btn-gray" onclick="calculate()">=</button>
+            </div>
+        </div>
+
+        <div class="qr-section">
+            <h2>📱 Scan QR Code</h2>
+            <div id="qrcode"></div>
+            <p>Apne phone se is QR code ko scan karein aur calculator instantly open karein!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
