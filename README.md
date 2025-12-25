@@ -1,14 +1,12 @@
 # 🧮 Scientific Calculator Web App
 
-A **Casio fx-991ES inspired scientific calculator** built using **HTML, CSS, and JavaScript**.  
+A **Minimal Web App inspired scientific calculator** built using **HTML, CSS, and JavaScript**.  
 This project focuses on a **realistic calculator UI**, advanced mathematical functions, and a **QR code feature** to instantly open the calculator on mobile devices.
 
 ---
 
 ## 🚀 Live Demo
-👉 https://USERNAME.github.io/calculator-project/
-
-(Replace `USERNAME` with your GitHub username)
+👉 https://saqib-abdulraouf.github.io/calculator-project/
 
 ---
 
